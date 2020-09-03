@@ -1,4 +1,3 @@
-console.log('Client side java script file is loading')
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
