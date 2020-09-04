@@ -41,7 +41,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        help_msg: 'This is my help message',
+        help_msg: 'If you need any help please contact the developer',
         title: 'Help',
         name: 'Omar Shehata'
     })
