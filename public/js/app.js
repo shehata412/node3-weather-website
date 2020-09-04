@@ -1,12 +1,3 @@
-
-// fetch('http://puzzle.mead.io/puzzle').then((response)=>{
-//     response.json().then((data)=>{
-//         console.log(data)
-//     })
-// })
-
-
-
 const weatherform = document.querySelector('form')
 const search = document.querySelector('input')
 const message1 = document.querySelector('#message-1')  //to target with id need #
@@ -22,7 +13,7 @@ weatherform.addEventListener('submit', (e) =>{
     const location = search.value
     //console.log(location)
     
-    fetch('http://localhost:3000/weather?address=' + location).then((response) =>{
+    fetch('/weather?address=' + location).then((response) =>{
     response.json().then((data) =>{
         if(data.error){
             message1.textContent =  data.error
